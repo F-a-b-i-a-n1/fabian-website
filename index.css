@@ -1,0 +1,373 @@
+/* Allgemien (Wird also in (fast) jeder html Datei benutzt) */
+body {
+    background-image: linear-gradient(to top, rgb(102, 87, 87), rgb(204, 204, 204));
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 8px; /* Die Macher von HTML haben standardmäßig festgelegt dass der seitliche Abstand 8px beträgt (Um das zu sehen: Drücke auf der Internetseite F12 oder Rechtsklick->Untersuchen). Will man aber dass das Bild ganz bis zum Rand geht, so muss man diese Zeile einfügen */
+}
+
+#main {
+    max-width: 900px; /* dadurch ist der Text auf der gesamten Seite nur 800 px breit & geht nicht über die gesamte Seitenbreite; das max wird eingefügt damit es auf dem Smartphone angepasst wird. Sonst wäre das hier 800px breit und der Rest (Bild, ...) würde zu klein angezeigt werden */
+    line-height: 1.75;
+    padding: 20px;
+    margin: 0 auto; /* <-- das zentriert den Block horizontal */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+p {
+    max-width: 800px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Navigationsleiste */
+#Navigationsleiste {
+    list-style-type: none;          /* Damit keine Aufzählungszeichen angezeigt werden (Werden standardmäßig bei Liste angezeigt!) */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#freak {
+    position: absolute;
+    margin-right: 2%;
+    padding-right: 0px;
+    right: 0%;
+}
+
+#logo {
+    color: white;
+    background-color: gray;
+    display: inline-block; /*adfasdf*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+/* Nur für Navigationsleiste */
+#Navigationsleiste li {
+    float: left;
+}
+
+/* Für alle anderen Listen: keine Float-Eigenschaft */
+ul:not(#Navigationsleiste) li {
+    float: none;
+    display: list-item; /* sicherstellen, dass sie blockartig sind */
+}
+
+
+
+
+
+
+
+/* Fußzeile */
+footer {
+    height: 200px;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 16px; /* dadurch wird das Copyright... unten zentriert */
+}
+
+footer ul {
+    list-style-type: none;
+    height: 120px; /* Blöd, dass ich hier konkreten Wert angeben muss... Sonst würde aber das copyright rechts neben dem "Kontaktiere mich" & "Folge mir" stehen */
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    gap: 3em;
+}
+
+footer ul li {
+    min-width: unset; /* falls die 300px stören */
+    text-align: left;
+    font-size: 16px;
+    line-height: 110%;
+    color: white;
+}
+
+footer ul li h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer ul li a {
+    display: flex;
+    padding: 0;
+    text-decoration: underline;
+}
+
+footer ul li a:hover {
+    color: rgb(168, 168, 168);
+}
+
+.SocialMediaLogo img {
+    width: 35px;   /* Oder z. B. 30px oder 50px – je nach gewünschter Größe */
+    height: auto;  /* Verhältnis bleibt gleich */
+    object-fit: contain; /* optional: damit Logos nicht verzerrt wirken */
+    margin: 0 5px; /* optionaler Abstand */
+}
+
+
+
+
+
+
+
+
+
+/* Foto auf 1. Seite */
+#top {
+    text-align: center;
+}
+
+.Startfoto {
+    position: relative;
+    text-align: center;
+    color: rgb(47, 47, 55);
+}
+
+.Startfoto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.KastenInBild {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#name {
+    font-size: 32px;
+    font-weight: bold;
+    margin:16px; /* freier Platz unter grauen Logo */
+}
+
+.LeisteSocialMediaLogos {
+    list-style-type: none;          /* Damit keine Aufzählungszeichen angezeigt werden (Werden standardmäßig bei Liste angezeigt!) */
+    text-align: center;
+}
+
+.SocialMediaLogo {
+    height: 70px;
+    width: 70px;
+}
+
+.left-text p {
+    text-align: left;
+    margin: 0 0 0.5em 0; /* nur unten ein kleiner Abstand */
+}
+
+
+
+
+
+
+
+
+
+/* Nur in index.html */
+.ZitatBlock {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#ZitatEinstein {
+    font-size: 24px;
+    margin: 0;
+}
+
+.ZitatAutor {
+    font-style: italic;
+    margin-top: 0.5em;
+    /* color: gray; */
+}
+
+.LeisteSocialMediaLogos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;                /* macht die Listenelemente nebeneinander */
+    justify-content: center;      /* zentriert die Symbole */
+    gap: 15px;                   /* Abstand zwischen den Symbolen */
+}
+
+
+
+
+/* Nur in contact.html */
+
+
+
+
+
+
+
+/* Nur in contact.html */
+ul.protokolle {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main ul.protokolle li a {
+  color: #222;             /* dunkles Grau */
+  text-align: left;
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#main ul.protokolle li a:hover {
+  /*color: royalblue;*/
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Nur in fotos.html */
+.gallery {
+    position: relative;
+
+    /* Horizontal zentrieren */
+    left: 50%;
+    transform: translate(-50%);
+
+    /* Grid erzeugen */
+    display: inline-grid;
+    grid-template-columns: repeat(3, auto);
+/*     grid-auto-columns: 500 px;
+    grid-auto-rows: 350px; */
+
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.gallery figure {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gallery figure img {
+    border-radius: 5px;
+
+    /* Falls Fotos nicht auf eine einheitliche Größe angepasst werden sollen (Dadurch verändern beim Hovern alle Fotos die Positionen leicht) */
+/*     max-width: 300px;                           
+    max-height: 300px; */
+
+    /* Falls Fotos auf eine einheitliche Größe angepasst werden sollen (Dadurch wirken die Bilder aber irgendwie unschärfer) */
+    width: 300px;                           
+    height: 300px;
+    object-fit: cover;
+
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.gallery figure figcaption {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+.gallery figure a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+.gallery figure img:hover,
+.gallery figure img:focus {
+    -ms-transform: scale(1.1);      /* IE  */
+    -webkit-transform: scle(1.1);   /* Safari */
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+/* Nur in den jeweiligen Fotoseiten, auf die man von fotos.html weitergeleitet wird */
+/* Folgendes wurde von https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button kopiert */
+.button-container {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+.btn {
+    background-color: rgb(0, 0, 0);
+    border: rgb(255, 255, 255);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+
+
+
+
+
+
+/* Nur in about.html */
+#image{
+    text-align: center;
+}
+
+#image img{
+    max-width: 300px;     /* Bild wird maximal 300px breit */
+    width: 100%;          /* Skaliert responsiv, also auf kleineren Bildschirmen passend */
+    height: auto;         /* Proportional skalieren */
+    border-radius: 8px;   /* Optional: weiche Ecken für schöneren Look */
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);  /* Optional: leichter Schatten */
+}
+
+
+
+
+
+
+
+
+
+/* Nur in bjj.html */

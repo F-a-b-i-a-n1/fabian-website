@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css" href="MyWebsite.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">    <!-- Ohne dieser Zeile würde die Seite auf dem Handy pixelgenau übertragen werden (also wäre vieles zu klein) -->
+        <title>Fabian Tanzer</title>                                                            <!-- Wird in Tab angezeigt -->
+        <style type="text/css"></style>
+        <script src="index.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component> <!-- Hier wird die globale Navigationsleiste aus JS eingefügt  -->
+
+        <div id="main"> <!-- Inhalt schreiben -->
+            <section id="contact"> <!-- Section beschreibt container, der meist Überschrift enthält -->
+                <h2>Kontakt </h2>
+                <p>Ich freue mich über Nachrichten zu meinen Projekten, zur Fotografie oder einfach über Feedback.</p>
+                
+                <table>
+                    <tr>
+                        <td>E-Mail:</td>
+                        <td> <a href="mailto:fabian.tanzer@t-online.de"> fabian.tanzer@t-online.de</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Facebook:</td>
+                        <td> <a href="https://www.facebook.com/fabian.tanzer.5"target="_blank">https://www.facebook.com/fabian.tanzer.5</a></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram:</td>
+                        <td>fa.bian_x (<a href="https://www.instagram.com/fa.bian_x/?hl=en"target="_blank">https://www.instagram.com/fa.bian_x/?hl=en</a>)</td>
+                    </tr>
+
+                    <tr>
+                        <td>LinkedIn:</td>
+                        <td> <a href="https://www.linkedin.com/in/fabian-tanzer-3165ab21a/"target="_blank">https://www.linkedin.com/in/fabian-tanzer-3165ab21a/</a></td>
+                    </tr>
+                    <tr>
+                        <td>Xing:</td>
+                        <td> <a href="https://www.xing.com/profile/Fabian_Tanzer"target="_blank">https://www.xing.com/profile/Fabian_Tanzer</a></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <footer-component></footer-component> <!-- Hier wird die globale Fußzeile aus JS eingefügt -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="MyWebsite.js"> </script>
+        <script src="highlight.js"></script>
+    </body>
+</html>

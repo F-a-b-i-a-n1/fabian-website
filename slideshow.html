@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fotogalerie</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="slideshow.css">
+  <script src="index.js" type="text/javascript" defer></script>
+  <script src="slideshow.js" defer></script>
+</head>
+<body>
+  <header-component></header-component>
+
+  <div class="slideshow-container" id="slideshow-container">
+    <!-- Bilder werden hier per JS eingefügt -->
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>   <!-- Linker Pfeil -->
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>    <!-- Rechter Pfeil -->
+  </div>
+
+  <div style="text-align:center" id="dots-container">
+    <!-- Hier kommen die Punkte -->
+  </div>
+
+    <!-- Container für den Download-Button -->
+    <div style="text-align:center; margin-top: 20px;" id="download-all-container"></div>
+
+  <footer-component></footer-component>
+  <script src="highlight.js"></script>
+</body>
+</html>
+

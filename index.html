@@ -1,0 +1,51 @@
+<!DOCTYPE html>         <!-- Index: Ist die Homepage (Hauptseite) der Website -->
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">    <!-- Ohne dieser Zeile würde die Seite auf dem Handy pixelgenau übertragen werden (also wäre vieles zu klein) -->
+        <title>Fabian Tanzer</title>                                                            <!-- Wird in Tab angezeigt -->
+        <style type="text/css"></style>
+        <script src="index.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component> <!-- Hier wird die globale Navigationsleiste aus JS eingefügt -->
+
+        <div id="top">
+            <div class="Startfoto">
+                <img src="Fotos/Regensburg_Donau.jpg" alt="Regensburg Donau"> <!-- Um Bild einzufügen; Namen eingeben, damit er Blinden vorgelesen wird; Bilder von "Unsplash" dürfen öffentlich genutzt werden -->
+                <div class="KastenInBild">
+                    <p id="name">Fabian Tanzer</p>
+                    <p>Schön, dass du hier bist!</p>
+                    <ul class="LeisteSocialMediaLogos">
+                        <li class="SocialMediaLogo"><a href="https://www.facebook.com/fabian.tanzer.5" target="_blank" rel="noopener noreferrer"><img src="Logos/FacebookLogo/Facebook Brand Asset Pack/Logo/Primary Logo/Facebook_Logo_Primary.png" alt="Facebook Logo"></a></li>
+                        <li class="SocialMediaLogo"><a href="https://www.instagram.com/fa.bian_x/?hl=en" target="_blank" rel="noopener noreferrer"><img src="Logos/InstagramLogo/01 Static Glyph/01 Gradient Glyph/Instagram_Glyph_Gradient.png" alt="Instagram Logo"></a></li>
+                        <li class="SocialMediaLogo"><a href="https://www.linkedin.com/in/fabian-tanzer-3165ab21a/" target="_blank" rel="noopener noreferrer"><img src="Logos/LinkedInLogo/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn Logo"></a></li>
+                        <li class="SocialMediaLogo"><a href="https://www.xing.com/profile/Fabian_Tanzer" target="_blank" rel="noopener noreferrer"><img src="Logos/XingLogo/icons8-xing.svg" alt="Xing Logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ZitatBlock">
+                <p id="ZitatEinstein">„Die Definition von Wahnsinn ist, immer wieder das Gleiche zu tun und andere Ergebnisse zu erwarten.“</p>
+                <p class="ZitatAutor">- Albert Einstein</p>
+            </div>
+        </div>
+
+        <div id="main"> <!-- Inhalt schreiben -->
+            <section class="intro-text left-text">
+                <p>Herzlich Willkommen auf meiner Website!</p>
+                <p>Ich habe Physik studiert und teile hier einige Inhalte aus meinem Studium – unter anderem meine Protokolle aus dem B-, F1- und F2-Praktikum.</p>
+                <p>Außerdem teile ich einige ausgewählte Fotos, die ich mit meiner Sony&nbsp;Alpha&nbsp;6000 aufgenommen habe – meist unterwegs auf Reisen.</p>
+                <p>Ein Hinweis vorab: Die Seite ist noch im Aufbau und daher nicht perfekt. Ich arbeite aber immer mal wieder daran, wenn ich Zeit finde.</p>
+            </section>
+        </div>
+
+        <footer-component></footer-component> <!-- Hier wird die globale Fußzeile aus JS eingefügt -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="MyWebsite.js"> </script>
+        <script src="highlight.js"></script>
+    </body>
+</html>

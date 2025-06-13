@@ -1,0 +1,68 @@
+<!DOCTYPE html>         <!-- Index: Ist die Homepage (Hauptseite) der Website -->
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">    <!-- Ohne dieser Zeile würde die Seite auf dem Handy pixelgenau übertragen werden (also wäre vieles zu klein) -->
+        <title>Fabian Tanzer - Über mich</title>                                                            <!-- Wird in Tab angezeigt -->
+        <style type="text/css"></style>
+        <script src="index.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header-component></header-component> <!-- Hier wird die globale Navigationsleiste aus JS eingefügt -->
+
+        <div id="main">
+            <div id="image">
+                <img src="Fotos/Portrait.jpg" alt="Portrait"> <!-- Um Bild einzufügen; Namen eingeben, damit er Blinden vorgelesen wird; Bilder von "Unsplash" dürfen öffentlich genutzt werden -->
+            </div>
+
+            <!-- Ich versuche im Folgenden oft das Wort "du" einzubauen, um den Leser direkt anzusprechen -->
+            <p> Hey ich bin Fabian!</p>
+                
+            <p>Ich habe den Bachelor of Science und Master of Science an der Universität Regensburg in Physik absolviert. Ich würde mich dennoch nicht als klassischen Nerd beschreiben. Zu meinen Hobbys zählen Karate, Krafttraining, Reisen, Modellbau und Fotografie.</p> <!-- Wenn du - wie so viele andere - nicht weißt, was BJJ ist, dann klicke doch einfach mal auf de(n) entsprechenden Tab oben ;-)  -->
+
+            <p> Auf dieser Website stelle ich dir kostenlos meine Praktikumsprotokolle sowie einige Zusammenfassungen, die ich während meines Physik Studiums gemacht habe, zur Verfügung stellen. Vielleicht bist du ja gerade an einem Physik-Thema am Verzweifeln und meine Unterlagen helfen dir weiter :)</p>
+
+            <p> Außerdem reise ich gerne – bisher vor allem in Europa – und halte meine Eindrücke mit der Kamera fest. Einige dieser Fotos (zum Teil professionell bearbeitet mit Adobe Lightroom Classic und Photoshop) findest du im Tab „Fotos“.</p>
+
+            <!-- <p> BJJ mache ich erst seit September 2022 und ich habe bemerkt, dass es unglaublich schwer fällt sich die Techniken zu merken und korrekt anzuwenden. Deshalb fasse ich nach jedem Training (Und mithilfe von Youtube Videos) die Techniken in einem Word-Dokument mit anschaulichen Bildern zusammen. Das half mir unglaublich, die Techniken auch beim Rollen anzuwenden. Vielleicht hilft es ja auch dir weiter :) </p> -->
+
+            <p> Das Thema Modelleisenbahn begleitet mich schon seit meiner Kindheit. Damals half ich meinem Opa beim Bauen. Irgendwann war jedoch die Platte (1x2 m) voll und der Platz im Haus auch zu klein. Als ich (22) war wurde jedoch wieder Platz frei und wir konnten weiter bauen und die Platte sogar auf 2x2 m vergrößern. Anleitungen und elektrische Pläne hierzu findest du im Tab "Modelleisenbahn". </p>
+
+            <p> So viel zu mir – klick dich doch einfach durch. Vielleicht ist ja etwas Nützliches oder Inspirierendes für dich dabei!</p>
+
+            <div> <!-- Inhalt schreiben -->
+                <section> <!-- Section beschreibt container, der meist Überschrift enthält -->
+                    <h2>Über mich - kompakt:</h2>
+                    <p>
+                        <table>
+                            <tr>
+                                <td>Name:</td>
+                                <td>Fabian Tanzer</td>
+                            </tr>
+                            <tr>
+                                <td>Alter:</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>Akademische Laufbahn:</td>
+                                <td>M. Sc. Physik an der Universität Regensburg</td>
+                            </tr>
+                            <tr>
+                                <td>Schulbildung:</td>
+                                <td>Fachoberschule (Technische Ausrichtung)</td>
+                            </tr>
+                            <tr>
+                                <td>Hobbys:</td>
+                                <td>Karate (2. Dan), BJJ, Wandern, Fotografie</td>
+                            </tr>
+                        </table>
+                </section>
+            </div>
+        </div>
+
+        <footer-component></footer-component> <!-- Hier wird die globale Fußzeile aus JS eingefügt -->
+        <script src="highlight.js"></script>
+    </body>
+</html>
