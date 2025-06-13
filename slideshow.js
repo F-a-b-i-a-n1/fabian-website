@@ -5,7 +5,7 @@ const container = document.getElementById("slideshow-container");
 const dotsContainer = document.getElementById("dots-container");
 
 // Neue zentrale JSON laden
-fetch('./Fotos/output.json')
+fetch('/Fotos/output.json')
   .then(res => res.json())
   .then(allSlideshows => {
     const keyMap = {
