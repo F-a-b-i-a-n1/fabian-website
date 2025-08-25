@@ -249,7 +249,45 @@ ul.protokolle {
   text-decoration: underline;
 }
 
+/* Kontaktbereich: Tabelle & Links */
+/* #contact table {
+  width: 100%;
+  border-collapse: collapse;
+} */
 
+#contact td {
+  padding: 8px 12px;
+  vertical-align: top;
+}
+
+#contact td:first-child {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+
+/* Links im Kontaktbereich */
+#contact a {
+  color: #0a66c2;           /* ein LinkedIn-ähnliches Blau */
+  text-decoration: none;    /* Standard: keine Unterstreichung */
+  overflow-wrap: anywhere;  /* bricht lange Links schön um */
+}
+
+#contact a:hover,
+#contact a:focus {
+  text-decoration: underline;
+}
+
+#contact a:visited {
+  color: #0a66c2;           /* kein Lila für besuchte Links */
+}
+
+/* Tastatur-Fokus sichtbar */
+#contact a:focus-visible {
+  outline: 2px solid #0a66c2;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
 
 
 
@@ -362,7 +400,11 @@ ul.protokolle {
     box-shadow: 0 0 8px rgba(0,0,0,0.2);  /* Optional: leichter Schatten */
 }
 
-
+table td:first-child {
+  padding-right: 20px;   /* Abstand nach rechts, kannst du anpassen */
+  font-weight: bold;     /* Optional: linke Spalte fett */
+  white-space: nowrap;   /* verhindert, dass z. B. "Akademische Laufbahn:" umbricht */
+}
 
 
 
